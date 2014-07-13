@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+- 2.1.1
+script:
+- RAILS_ENV=test bundle exec rake --trace db:create db:migrate
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: cpAub4l3VvU7bqhjm2ffk3lS8ymOZfNl7hFxsupEubzYzIHwwACZkrrJSdwOH3JZF0tzfZGv1ZTgnuaFnMmvTUK1iBxWIOWbYHplggcfrmpYZHeuKhzhBrNq7G1hozyZ4RaedX7cdiqcrGXSAMNS3ksGIUu6yxWFDkmKno8TKyw=
+  app: fuck-it-bucket
+  on:
+    repo: simplyaubs/gratefulgarden
