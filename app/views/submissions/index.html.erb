@@ -1,1 +1,17 @@
 <h1>Welcome to the Grateful Garden</h1>
+
+<%= form_for @submission do |f| %>
+  <p>
+    <%= f.label '----->' %>
+    <%= f.text_field :submission, placeholder: 'I\'m grateful for ' %>
+    <%= f.submit 'I\'M GRATEFUL' %>
+  </p>
+<% end %>
+
+<% @submissions.reverse.each do |input| %>
+  <ul>
+    <li>
+      <%= input.submission %> - I'm grateful!
+    </li>
+  </ul>
+<% end %>
