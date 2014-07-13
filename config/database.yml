@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: gratefulgarden_development
+
+test:
+  <<: *default
+  database: gratefulgarden_test
+
