@@ -17,7 +17,3 @@ Setup:
 2. rake db:create db:migrate RAILS_ENV=test
 3. run rspec
 4. heroku run rake db:create db:migrate
-
-
-
-
