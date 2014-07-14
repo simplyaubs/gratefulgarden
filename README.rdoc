@@ -1,4 +1,23 @@
-== GratefulGarden
+== Grateful Garden
 
 {<img src="https://codeclimate.com/github/simplyaubs/gratefulgarden.png" />}[https://codeclimate.com/github/simplyaubs/gratefulgarden]
 {<img src="https://travis-ci.org/simplyaubs/gratefulgarden.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/simplyaubs/gratefulgarden]
+
+This is an app to keep your 'grateful list'.
+
+Pivotal tracker:
+
+Heroku staging: http://grateful-garden.herokuapp.com/
+
+Production: http://gratefulgarden.org
+
+Setup:
+1. bundle
+2. rake db:create db:migrate
+2. rake db:create db:migrate RAILS_ENV=test
+3. run rspec
+4. heroku run rake db:create db:migrate
+
+
+
+
