@@ -9,7 +9,7 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: cpAub4l3VvU7bqhjm2ffk3lS8ymOZfNl7hFxsupEubzYzIHwwACZkrrJSdwOH3JZF0tzfZGv1ZTgnuaFnMmvTUK1iBxWIOWbYHplggcfrmpYZHeuKhzhBrNq7G1hozyZ4RaedX7cdiqcrGXSAMNS3ksGIUu6yxWFDkmKno8TKyw=
+    secure: TmxIkGKxxhQoqdjvKIMAgejuzju89VTc1toB4Qk2xTdDvkNYQwEZ7VANmZJ5xybuS6wHCL1Zq+d10mhCwVBHYy00KY5n3X1dNDppVyvcSlndKqESPmnwEatIIMwlS/OrkSXPO+cUzAJeGYF3z1JqWP2n2eATHzUszVDHvBequ+M=
   app: fuck-it-bucket
   on:
     repo: simplyaubs/gratefulgarden
