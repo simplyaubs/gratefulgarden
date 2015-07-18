@@ -3,6 +3,7 @@ class SubmissionsController < ApplicationController
   def index
     @submission = Submission.new
     @submissions = Submission.all
+    @all_time_count = Submission.all.count
   end
 
   def create
