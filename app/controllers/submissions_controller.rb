@@ -4,6 +4,7 @@ class SubmissionsController < ApplicationController
     @submission = Submission.new
     @submissions = Submission.all
     @all_time_count = Submission.all.count
+    @todays_count = Submission.where('created_at >= ?', 1.day.ago).count
   end
 
   def create
